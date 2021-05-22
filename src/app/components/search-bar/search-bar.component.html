@@ -1,6 +1,6 @@
 
 <div class="search-container">
-    <form action="" class="search-form">
+    <form action="" class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
       <span class="logo" routerLink="/">MxPlayer</span>
       <input 
       class="search-input"
